@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Your Selection!</title>
+</head>
+
+<body>
+
+    <h1><%- country %></h1>
+
+    <img id="im">
+    <p id="flag"><%- flag %></p>
+
+    <%- region %> <br>
+    
+    <%- independent %> <br>
+
+    
+    
+    <a href="/">HOME</a>
+
+    <script>
+        let source = document.getElementById("flag").innerHTML;
+        document.getElementById("im").src = source;
+        console.log(source);
+    </script>
+</body>
+
+</html>
