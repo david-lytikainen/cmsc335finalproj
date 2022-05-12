@@ -10,23 +10,23 @@
     <h1 style = "font-family:verdana">Enter a country of Your Choice! </h1>
     <form action = "/processRequest" method ="post">
         <fieldset>
-            <label> Country Name: <input type="text" name="firstName"/></label>
+            <label> Country Name: <input type="text" name="country" required></label>
         </fieldset>
         <fieldset>   
-        <label> First Name: <input type="text" name="firstName"/></label>
-        <label>Last Name: <input type="text" name="lastName" ></label> 
+        <label> First Name: <input type="text" name="firstName" required></label>
+        <label>Last Name: <input type="text" name="lastName" required></label> 
         <br>
         <br>
-        <label>Country You live in: <input type="text" name="Zipcode"/></label>
+        <label>Country You live in: <input type="text" name="clientCountry" required></label>
 
         <br>
         <br>
         </fieldset>
-    </form>
         <br>
-		<input type="reset"/>
-		<input type="submit" value="Submit Form"/>
+		<input type="reset">
+		<input type="submit" value="Submit Form">
         <hr>
+    </form>
 
     
 </body>
