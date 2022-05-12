@@ -10,21 +10,32 @@
 
     <h1><%- country %></h1>
 
-    <img id="im">
+    <img id="im"><br>
+    
+    Region: &nbsp;<%- region %><br>
+
+    <% if (independent == "Have a nice day and learn how to spell :)") { %>
+        <%- independent %>
+    <% } else if (independent) { %>
+        <p>This is an independent country.</p>
+    <% } else { %>
+        <p>Not an independent country.</p>
+    <% } %>
+
     <p id="flag"><%- flag %></p>
-
-    <%- region %> <br>
-    
-    <%- independent %> <br>
-
-    
     
     <a href="/">HOME</a>
 
+    <style>
+        #flag { color: transparent; }
+        img { 
+            height: 300px;
+            width: auto;
+        }
+    </style>
     <script>
         let source = document.getElementById("flag").innerHTML;
         document.getElementById("im").src = source;
-        console.log(source);
     </script>
 </body>
 
