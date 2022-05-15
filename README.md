@@ -8,3 +8,4 @@ API used: To create this app, we used REST Countries API (https://restcountries.
 
 Youtube demo video: https://youtu.be/f5bv0btA8QM
 
+## The app is deployed on Heroku at: https://nodejs-cmsc335-final.herokuapp.com/
